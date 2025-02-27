@@ -15,6 +15,7 @@ public class Stats : MonoBehaviour
     [Header("Heal Settings")]
     public int Heal = 3; // until 8
     public int Heal_Module = 0; // Heal Level
+    public bool HasRespawn = false;
 
     [Header("Sword Attack Settings")]
     public float M1_Range = 5f;
@@ -43,6 +44,7 @@ public class Stats : MonoBehaviour
     public int P_Module = 0; // Daze module (Parry Module)
 
     public RespawnScript R; // Reference to the RespawnScript
+    public Movement M;
 
     void Start()
     {
@@ -67,13 +69,17 @@ public class Stats : MonoBehaviour
         }
     }
 
-    private void Die()
+    public void Die()
     {
         Debug.Log("Player has died.");
         gameObject.SetActive(false); // Temporarily disables the player object
 
         // Call Respawn after 3 seconds
-        Invoke(nameof(Respawn), 3f);
+        if(HasRespawn == true)
+        {
+            Invoke(nameof(Respawn), 3f);
+        }
+        Debug.Log("Player didnt save, Game Over.");
     }
 
     private void Respawn()
@@ -86,6 +92,7 @@ public class Stats : MonoBehaviour
         CurrHP = MaxHP;
         HealPackAmmount = HealPackMax;
         M2_Ammo = M2_AmmoMax;
+        //M.Reset();
         Debug.Log("Player has been healed.");
     }
 }

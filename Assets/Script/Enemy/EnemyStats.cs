@@ -40,6 +40,40 @@ public class EnemyStats : MonoBehaviour
         }
     }
 
+    public void DamageEnemyBA()
+    {
+        CurrHP = CurrHP - S.M1_Damage;
+    }
+
+    public void DamageEnemyBA2()
+    {
+        CurrHP = CurrHP - S.M1_Damage;
+    }
+
+    public void DamageEnemyBA3()
+    {
+        CurrHP = CurrHP - S.M1_Damage * 2;
+        Debug.Log(S.M1_Damage * 2);
+    }
+
+    public void DamageEnemyH1()
+    {
+        float H1 = 2 * S.M1_Damage;
+        CurrHP = CurrHP - H1;
+    }
+
+    public void DamageEnemyH2()
+    {
+        float H2 = 2 * S.M1_Damage * 1.5f;
+        CurrHP = CurrHP - H2;
+    }
+
+    public void DamageEnemyH3()
+    {
+        float H3 = 2 * S.M1_Damage * 2;
+        CurrHP = CurrHP - H3;
+    }
+
     // Update is called once per frame
     void Update()
     {

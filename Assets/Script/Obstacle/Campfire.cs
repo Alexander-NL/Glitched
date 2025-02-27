@@ -48,6 +48,7 @@ public class Campfire : MonoBehaviour
     {
         if (R != null)
         {
+            S.HasRespawn = true;
             R.UpdateRespawnPoint(transform.position);
             Debug.Log("Checkpoint set at campfire.");
         }
