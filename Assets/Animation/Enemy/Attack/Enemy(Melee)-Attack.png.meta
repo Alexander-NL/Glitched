@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9dce4787651cccf42adcc444c6617669
+guid: 3b60cb111cf12aa44b958058c576e17e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,148 +97,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Phase1 (1)_0
+      name: Enemy(Melee)-Attack_0
       rect:
         serializedVersion: 2
-        x: 37
-        y: 309
-        width: 21
-        height: 33
+        x: 13
+        y: 99
+        width: 49
+        height: 54
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bb5a313a75d97e4c9834db9d2ef8369
-      internalID: 865361637
+      spriteID: 50ee65d945c996a41a2a68b778fe4faf
+      internalID: -1014857353
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Phase1 (1)_1
+      name: Enemy(Melee)-Attack_1
       rect:
         serializedVersion: 2
-        x: 166
-        y: 308
-        width: 20
-        height: 46
+        x: 97
+        y: 99
+        width: 45
+        height: 53
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b87657e22d989744889dee04c65b76a
-      internalID: 2008122874
+      spriteID: 4d8e50977d1110641859918fef5bed3d
+      internalID: -2086238848
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Phase1 (1)_2
+      name: Enemy(Melee)-Attack_2
       rect:
         serializedVersion: 2
-        x: 293
-        y: 307
-        width: 21
-        height: 45
+        x: 173
+        y: 99
+        width: 65
+        height: 47
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e825f964838f3a941bb9346c0bf490f1
-      internalID: -40917653
+      spriteID: fbbb637806c9f8d4c8e0935364710f1d
+      internalID: 1229754169
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Phase1 (1)_3
+      name: Enemy(Melee)-Attack_3
       rect:
         serializedVersion: 2
-        x: 12
-        y: 148
-        width: 97
-        height: 64
-      alignment: 9
-      pivot: {x: 0.45884842, y: 0.6801801}
+        x: 13
+        y: 19
+        width: 65
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11cc8302a7ece4d4fb6c371b3f723ed7
-      internalID: 206536199
+      spriteID: 9795ef6a62cf322429b2a4c08ab79d7f
+      internalID: -241918183
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Phase1 (1)_5
+      name: Enemy(Melee)-Attack_4
       rect:
         serializedVersion: 2
-        x: 140
-        y: 148
-        width: 115
-        height: 92
-      alignment: 9
-      pivot: {x: 0.3225919, y: 0.5771342}
+        x: 97
+        y: 19
+        width: 61
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20e466369fc7d3249a1cc4a802eeb584
-      internalID: -824966154
+      spriteID: 20a93d767bcafd84099381e7688aee20
+      internalID: 37523459
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Phase1 (1)_6
+      name: Enemy(Melee)-Attack_5
       rect:
         serializedVersion: 2
-        x: 268
-        y: 148
-        width: 115
-        height: 92
-      alignment: 9
-      pivot: {x: 0.33862916, y: 0.6042525}
+        x: 177
+        y: 19
+        width: 61
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7686fe31d15c97445b63b43c7749301a
-      internalID: 2065656040
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Phase1 (1)_7
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 20
-        width: 115
-        height: 92
-      alignment: 9
-      pivot: {x: 0.31934562, y: 0.576612}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 05fb1b4869498344185b36ecfb1c10f5
-      internalID: -2134738884
+      spriteID: 7e7767c208021534caaa6a44466ff9a2
+      internalID: -886508845
       vertices: []
       indices: 
       edges: []
@@ -254,14 +233,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Phase1 (1)_0: 865361637
-      Phase1 (1)_1: 2008122874
-      Phase1 (1)_2: -40917653
-      Phase1 (1)_3: 206536199
-      Phase1 (1)_4: -754256517
-      Phase1 (1)_5: -824966154
-      Phase1 (1)_6: 2065656040
-      Phase1 (1)_7: -2134738884
+      Enemy(Melee)-Attack_0: -1014857353
+      Enemy(Melee)-Attack_1: -2086238848
+      Enemy(Melee)-Attack_2: 1229754169
+      Enemy(Melee)-Attack_3: -241918183
+      Enemy(Melee)-Attack_4: 37523459
+      Enemy(Melee)-Attack_5: -886508845
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

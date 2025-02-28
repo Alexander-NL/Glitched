@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9dce4787651cccf42adcc444c6617669
+guid: 634d52bbfea5d6e49b8e2fef850f88bd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,148 +97,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Phase1 (1)_0
+      name: Enemy(Melee)DamagedState_3
       rect:
         serializedVersion: 2
-        x: 37
-        y: 309
-        width: 21
-        height: 33
+        x: 24
+        y: 113
+        width: 51
+        height: 58
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bb5a313a75d97e4c9834db9d2ef8369
-      internalID: 865361637
+      spriteID: ed4125aa795c77d4b80cd80573349faf
+      internalID: 1678597801
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Phase1 (1)_1
+      name: Enemy(Melee)DamagedState_4
       rect:
         serializedVersion: 2
-        x: 166
-        y: 308
-        width: 20
-        height: 46
+        x: 120
+        y: 114
+        width: 51
+        height: 53
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b87657e22d989744889dee04c65b76a
-      internalID: 2008122874
+      spriteID: 796f1f05dc26eee43bd68a27c4220374
+      internalID: -1497589323
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Phase1 (1)_2
+      name: Enemy(Melee)DamagedState_6
       rect:
         serializedVersion: 2
-        x: 293
-        y: 307
-        width: 21
-        height: 45
+        x: 24
+        y: 16
+        width: 51
+        height: 62
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e825f964838f3a941bb9346c0bf490f1
-      internalID: -40917653
+      spriteID: 0212718a68e546d4eb8eb89812fa0a19
+      internalID: 264997169
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Phase1 (1)_3
+      name: Enemy(Melee)DamagedState_7
       rect:
         serializedVersion: 2
-        x: 12
-        y: 148
-        width: 97
-        height: 64
-      alignment: 9
-      pivot: {x: 0.45884842, y: 0.6801801}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 11cc8302a7ece4d4fb6c371b3f723ed7
-      internalID: 206536199
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Phase1 (1)_5
-      rect:
-        serializedVersion: 2
-        x: 140
-        y: 148
-        width: 115
-        height: 92
-      alignment: 9
-      pivot: {x: 0.3225919, y: 0.5771342}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 20e466369fc7d3249a1cc4a802eeb584
-      internalID: -824966154
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Phase1 (1)_6
-      rect:
-        serializedVersion: 2
-        x: 268
-        y: 148
-        width: 115
-        height: 92
-      alignment: 9
-      pivot: {x: 0.33862916, y: 0.6042525}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7686fe31d15c97445b63b43c7749301a
-      internalID: 2065656040
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Phase1 (1)_7
-      rect:
-        serializedVersion: 2
-        x: 12
+        x: 119
         y: 20
-        width: 115
-        height: 92
-      alignment: 9
-      pivot: {x: 0.31934562, y: 0.576612}
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05fb1b4869498344185b36ecfb1c10f5
-      internalID: -2134738884
+      spriteID: d2930ccd440c4594786856898b36b3cb
+      internalID: 59759342
       vertices: []
       indices: 
       edges: []
@@ -254,14 +191,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Phase1 (1)_0: 865361637
-      Phase1 (1)_1: 2008122874
-      Phase1 (1)_2: -40917653
-      Phase1 (1)_3: 206536199
-      Phase1 (1)_4: -754256517
-      Phase1 (1)_5: -824966154
-      Phase1 (1)_6: 2065656040
-      Phase1 (1)_7: -2134738884
+      Enemy(Melee)DamagedState_0: -906394853
+      Enemy(Melee)DamagedState_1: -1994007012
+      Enemy(Melee)DamagedState_2: -446815974
+      Enemy(Melee)DamagedState_3: 1678597801
+      Enemy(Melee)DamagedState_4: -1497589323
+      Enemy(Melee)DamagedState_5: 1892220356
+      Enemy(Melee)DamagedState_6: 264997169
+      Enemy(Melee)DamagedState_7: 59759342
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

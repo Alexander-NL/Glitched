@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9dce4787651cccf42adcc444c6617669
+guid: c0bfdf7843a9a5f42841211433dd978d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,148 +97,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Phase1 (1)_0
+      name: Enemy(Melee)-WalkingDown_0
       rect:
         serializedVersion: 2
-        x: 37
-        y: 309
-        width: 21
-        height: 33
+        x: 25
+        y: 95
+        width: 35
+        height: 49
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bb5a313a75d97e4c9834db9d2ef8369
-      internalID: 865361637
+      spriteID: 29a03ee99dc962e4a95efd2ea3b74dc2
+      internalID: -372717805
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Phase1 (1)_1
+      name: Enemy(Melee)-WalkingDown_1
       rect:
         serializedVersion: 2
-        x: 166
-        y: 308
-        width: 20
-        height: 46
+        x: 105
+        y: 95
+        width: 35
+        height: 49
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b87657e22d989744889dee04c65b76a
-      internalID: 2008122874
+      spriteID: 1300b9d986a3bd543b0e9b14c8e0e1c2
+      internalID: -738729546
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Phase1 (1)_2
+      name: Enemy(Melee)-WalkingDown_2
       rect:
         serializedVersion: 2
-        x: 293
-        y: 307
-        width: 21
-        height: 45
+        x: 25
+        y: 15
+        width: 35
+        height: 49
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e825f964838f3a941bb9346c0bf490f1
-      internalID: -40917653
+      spriteID: 94b291d538258f2418369246e13051fe
+      internalID: 401571885
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Phase1 (1)_3
+      name: Enemy(Melee)-WalkingDown_3
       rect:
         serializedVersion: 2
-        x: 12
-        y: 148
-        width: 97
-        height: 64
-      alignment: 9
-      pivot: {x: 0.45884842, y: 0.6801801}
+        x: 105
+        y: 15
+        width: 35
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11cc8302a7ece4d4fb6c371b3f723ed7
-      internalID: 206536199
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Phase1 (1)_5
-      rect:
-        serializedVersion: 2
-        x: 140
-        y: 148
-        width: 115
-        height: 92
-      alignment: 9
-      pivot: {x: 0.3225919, y: 0.5771342}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 20e466369fc7d3249a1cc4a802eeb584
-      internalID: -824966154
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Phase1 (1)_6
-      rect:
-        serializedVersion: 2
-        x: 268
-        y: 148
-        width: 115
-        height: 92
-      alignment: 9
-      pivot: {x: 0.33862916, y: 0.6042525}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7686fe31d15c97445b63b43c7749301a
-      internalID: 2065656040
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Phase1 (1)_7
-      rect:
-        serializedVersion: 2
-        x: 12
-        y: 20
-        width: 115
-        height: 92
-      alignment: 9
-      pivot: {x: 0.31934562, y: 0.576612}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 05fb1b4869498344185b36ecfb1c10f5
-      internalID: -2134738884
+      spriteID: f477fae86e834aa42831d7ddf592a1d5
+      internalID: 275189016
       vertices: []
       indices: 
       edges: []
@@ -254,14 +191,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Phase1 (1)_0: 865361637
-      Phase1 (1)_1: 2008122874
-      Phase1 (1)_2: -40917653
-      Phase1 (1)_3: 206536199
-      Phase1 (1)_4: -754256517
-      Phase1 (1)_5: -824966154
-      Phase1 (1)_6: 2065656040
-      Phase1 (1)_7: -2134738884
+      Enemy(Melee)-WalkingDown_0: -372717805
+      Enemy(Melee)-WalkingDown_1: -738729546
+      Enemy(Melee)-WalkingDown_2: 401571885
+      Enemy(Melee)-WalkingDown_3: 275189016
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

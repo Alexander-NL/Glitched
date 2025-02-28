@@ -13,6 +13,9 @@ public class EnemyStats : MonoBehaviour
     public float Range = 1.2f;
     public float attackCooldown = 1f; //Time between Chrage attack
     public float WindUpTime = 1.2f;
+    public float AnimationDelay = 1f;
+
+    public float stunDuration = 1.5f;
 
     [Header("Speed Settings")]
     public float MovSpeed = 2f;
@@ -24,11 +27,17 @@ public class EnemyStats : MonoBehaviour
 
     private GameObject player;
     private Stats S;
+    private Animator animator;
+    public EnemyChase EC;
+
+    public bool Dead;
+    public bool NotWell;
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.Find("Player");
+        animator = GetComponent<Animator>();
         S = player.GetComponent<Stats>();
     }
 
@@ -53,7 +62,6 @@ public class EnemyStats : MonoBehaviour
     public void DamageEnemyBA3()
     {
         CurrHP = CurrHP - S.M1_Damage * 2;
-        Debug.Log(S.M1_Damage * 2);
     }
 
     public void DamageEnemyH1()
@@ -79,13 +87,25 @@ public class EnemyStats : MonoBehaviour
     {
         if (CurrHP <= 0)
         {
-            Die();
+            EC.StopMovement();
+            Dead = true;
+            StartCoroutine(DieWithDelay());
         }
+    }
+
+    IEnumerator DieWithDelay()
+    {
+        yield return new WaitForSeconds(2);
+        Die();
     }
 
     private void Die()
     {
         Debug.Log("Enemy Dead");
         gameObject.SetActive(false);
+    }
+    public bool DEAD()
+    {
+        return Dead;
     }
 }

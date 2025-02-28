@@ -28,6 +28,7 @@ public class Movement : MonoBehaviour
 
     // Reference to the Animator component
     private Animator animator;
+    public SpriteRenderer spriteRenderer;
 
     // Store the default local scale for flipping
     private Vector3 defaultLocalScale;
@@ -82,11 +83,11 @@ public class Movement : MonoBehaviour
                 // Flip the sprite based on movement direction
                 if (movementInput.x > 0) // Moving right
                 {
-                    transform.localScale = new Vector3(defaultLocalScale.x, defaultLocalScale.y, defaultLocalScale.z);
+                    spriteRenderer.flipX = false;
                 }
                 else if (movementInput.x < 0) // Moving left
                 {
-                    transform.localScale = new Vector3(-defaultLocalScale.x, defaultLocalScale.y, defaultLocalScale.z);
+                    spriteRenderer.flipX = true;
                 }
             }
 
@@ -101,7 +102,6 @@ public class Movement : MonoBehaviour
             }
         }
     }
-
     private bool TryMove(Vector2 direction)
     {
         int count = rb.Cast(direction, movementFilter, castCollisions, moveSpeed * Time.fixedDeltaTime + collisionOffset);

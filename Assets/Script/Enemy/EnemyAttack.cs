@@ -1,5 +1,7 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class EnemyAttack : MonoBehaviour
 {
@@ -13,7 +15,12 @@ public class EnemyAttack : MonoBehaviour
     private float lastAttackTime = 0f; // Time of the last attack
     private bool isWindingUp = false; // Flag to check if the enemy is in wind-up phase
     private float windUpStartTime = 0f; // Time when the wind-up phase started
-    private bool isStunned = false; // Flag to check if the enemy is stunned
+    public bool isStunned = false; // Flag to check if the enemy is stunned
+
+    public Animator animator;
+    public bool AttackingPlayer;
+
+    private Vector2 attackDirection;
 
     void Start()
     {
@@ -36,6 +43,7 @@ public class EnemyAttack : MonoBehaviour
             // Check if enough time has passed since the last attack
             if (Time.time - lastAttackTime >= ES.attackCooldown && !isWindingUp)
             {
+               
                 StartWindUp();
             }
 
@@ -59,6 +67,7 @@ public class EnemyAttack : MonoBehaviour
 
     void StartWindUp()
     {
+        AttackingPlayer = true;
         isWindingUp = true; // Start the wind-up phase
         windUpStartTime = Time.time; // Record the start time of the wind-up phase
         Debug.Log("Enemy is winding up to attack...");
@@ -66,17 +75,15 @@ public class EnemyAttack : MonoBehaviour
         // Optional: Add visual/audio cues for the wind-up phase (e.g., a glowing effect or sound)
     }
 
-    void CancelWindUp()
+    public void CancelWindUp()
     {
+        AttackingPlayer = false;
         isWindingUp = false; // Cancel the wind-up phase
         Debug.Log("Enemy canceled the attack because the player moved out of range.");
     }
 
-    void ExecuteAttack()
+    public void ExecuteAttack()
     {
-        isWindingUp = false; // End the wind-up phase
-        lastAttackTime = Time.time; // Update the last attack time
-
         playerStats = player.GetComponent<Stats>();
         if (playerStats != null)
         {
@@ -87,13 +94,34 @@ public class EnemyAttack : MonoBehaviour
         {
             EP.Patrol(); // Fallback to patrolling if player stats are not found
         }
+        isWindingUp = false; // End the wind-up phase
+        lastAttackTime = Time.time; // Update the last attack time
     }
-
     public void Stun(float duration)
     {
         if (isStunned) return; // Prevent multiple stuns
-
+        AttackingPlayer = false;
         StartCoroutine(StunRoutine(duration));
+    }
+
+    public Vector2 CalculateAttackDirection()
+    {
+        // Example: Use mouse position to determine attack direction 
+        Vector2 direction = (player.position - transform.position).normalized;
+        return direction;
+    }
+
+    public int GetDirectionValue(Vector2 direction)
+    {
+        // Determine the direction index based on the angle
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
+        if (angle >= 45 && angle < 135) // Up
+            return 0;
+        else if (angle >= -135 && angle < -45) // Down
+            return 1;
+        else
+            return 2;
     }
 
     IEnumerator StunRoutine(float duration)
@@ -120,5 +148,15 @@ public class EnemyAttack : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, ES.Range);
+    }
+
+    public bool attacking()
+    {
+        return AttackingPlayer;
+    }
+
+    public bool Stunned()
+    {
+        return isStunned;
     }
 }
