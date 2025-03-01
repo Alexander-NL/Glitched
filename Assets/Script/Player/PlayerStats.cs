@@ -45,7 +45,7 @@ public class Stats : MonoBehaviour
 
     public RespawnScript R; // Reference to the RespawnScript
     public Movement M;
-
+    public AudioPlayer AP;
     void Start()
     {
 
@@ -61,9 +61,11 @@ public class Stats : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        AP.PlayerDamagedSoundPlay();
         CurrHP -= damage;
         if (CurrHP <= 0)
         {
+            AP.PlayerDeadSoundPlay();
             CurrHP = 0;
             Die();
         }
@@ -89,6 +91,7 @@ public class Stats : MonoBehaviour
 
     public void HealPlayer()
     {
+        AP.HealSoundPlay();
         CurrHP = MaxHP;
         HealPackAmmount = HealPackMax;
         M2_Ammo = M2_AmmoMax;

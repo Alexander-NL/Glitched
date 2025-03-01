@@ -30,6 +30,7 @@ public class Attack : MonoBehaviour
     private SpriteRenderer spriteRenderer; // Reference to the SpriteRenderer component
 
     private Vector2 attackDirection; // Store the attack direction when the attack is initiated
+    public AudioPlayer AP;
 
     private void Awake()
     {
@@ -140,6 +141,7 @@ public class Attack : MonoBehaviour
 
     IEnumerator PerformBasicAttack()
     {
+        AP.BasicAttack1Play();
         basicAttackCount++;
         lastBasicAttackTime = Time.time;
 
@@ -171,6 +173,7 @@ public class Attack : MonoBehaviour
 
     public void PerformChargedAttack(int stage)
     {
+        AP.ChargedRampUpPlay();
         string animationTrigger = "C_Attack" + stage;
         animator.SetTrigger(animationTrigger);
 

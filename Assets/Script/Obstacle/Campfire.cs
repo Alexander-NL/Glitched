@@ -7,6 +7,9 @@ public class Campfire : MonoBehaviour
     public Stats S;  // Reference to the player's stats
     public RespawnScript R; // Reference to the RespawnScript
 
+    public AudioSource src;
+    public AudioClip Interact;
+
     private bool isPlayerInRange = false;  // Flag to check if the player is in range
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -52,5 +55,11 @@ public class Campfire : MonoBehaviour
             R.UpdateRespawnPoint(transform.position);
             Debug.Log("Checkpoint set at campfire.");
         }
+    }
+
+    public void InteractPlay()
+    {
+        src.clip = Interact;
+        src.Play();
     }
 }

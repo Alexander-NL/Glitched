@@ -29,6 +29,7 @@ public class EnemyStats : MonoBehaviour
     private Stats S;
     private Animator animator;
     public EnemyChase EC;
+    public AudioEnemy AE;
 
     public bool Dead;
     public bool NotWell;
@@ -51,33 +52,39 @@ public class EnemyStats : MonoBehaviour
 
     public void DamageEnemyBA()
     {
+        AE.DamagedSound();
         CurrHP = CurrHP - S.M1_Damage;
     }
 
     public void DamageEnemyBA2()
     {
+        AE.DamagedSound();
         CurrHP = CurrHP - S.M1_Damage;
     }
 
     public void DamageEnemyBA3()
     {
+        AE.DamagedSound();
         CurrHP = CurrHP - S.M1_Damage * 2;
     }
 
     public void DamageEnemyH1()
     {
+        AE.DamagedSound();
         float H1 = 2 * S.M1_Damage;
         CurrHP = CurrHP - H1;
     }
 
     public void DamageEnemyH2()
     {
+        AE.DamagedSound();
         float H2 = 2 * S.M1_Damage * 1.5f;
         CurrHP = CurrHP - H2;
     }
 
     public void DamageEnemyH3()
     {
+        AE.DamagedSound();
         float H3 = 2 * S.M1_Damage * 2;
         CurrHP = CurrHP - H3;
     }
@@ -95,6 +102,7 @@ public class EnemyStats : MonoBehaviour
 
     IEnumerator DieWithDelay()
     {
+        AE.DeadSound();
         yield return new WaitForSeconds(2);
         Die();
     }

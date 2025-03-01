@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class Heal : MonoBehaviour
 {
+    public AudioPlayer AP;
     public Stats S; //Put Stat.cs here
     public void OnHeal()
     {
@@ -28,6 +29,7 @@ public class Heal : MonoBehaviour
 
     void HealPlayer()
     {
+        AP.HealSoundPlay();
         S.CurrHP = S.CurrHP + 25;
         if(S.CurrHP > S.MaxHP)
         {

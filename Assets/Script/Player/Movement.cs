@@ -25,6 +25,9 @@ public class Movement : MonoBehaviour
     public bool canDash = true;
     private int enemyLayer;
     private int spikelayer;
+    private int DeadBlocks;
+
+    public AudioPlayer AP;
 
     // Reference to the Animator component
     private Animator animator;
@@ -38,6 +41,7 @@ public class Movement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         enemyLayer = LayerMask.NameToLayer("Enemy");
         spikelayer = LayerMask.NameToLayer("Spike");
+        DeadBlocks = LayerMask.NameToLayer("DeadBlocks");
 
         // Get the Animator component
         animator = GetComponent<Animator>();
@@ -116,6 +120,7 @@ public class Movement : MonoBehaviour
     void OnMove(InputValue movementValue)
     {
         movementInput = movementValue.Get<Vector2>();
+        AP.FootstepSoundPlay();
     }
 
     void OnDash()
@@ -131,6 +136,7 @@ public class Movement : MonoBehaviour
     {
         canDash = false;
         isDashing = true;
+        AP.DashSoundPlay();
 
         // Determine the dash direction and set the appropriate state
         if (Mathf.Abs(movementInput.y) > Mathf.Abs(movementInput.x))
@@ -156,6 +162,7 @@ public class Movement : MonoBehaviour
         // Temporarily ignore collision with "Enemy" and "Spike" layers
         Physics2D.IgnoreLayerCollision(gameObject.layer, enemyLayer, true);
         Physics2D.IgnoreLayerCollision(gameObject.layer, spikelayer, true);
+        Physics2D.IgnoreLayerCollision(gameObject.layer, DeadBlocks, true);
 
         rb.velocity = movementInput.normalized * dashSpeed;
         yield return new WaitForSeconds(dashDuration);
@@ -166,6 +173,7 @@ public class Movement : MonoBehaviour
         // Re-enable collision with "Enemy" and "Spike" layers
         Physics2D.IgnoreLayerCollision(gameObject.layer, enemyLayer, false);
         Physics2D.IgnoreLayerCollision(gameObject.layer, spikelayer, false);
+        Physics2D.IgnoreLayerCollision(gameObject.layer, DeadBlocks, false);
 
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;

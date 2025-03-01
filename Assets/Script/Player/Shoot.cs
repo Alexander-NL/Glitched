@@ -17,6 +17,7 @@ public class ShootScrapped : MonoBehaviour
     private Animator animator; // Reference to the Animator component
     private SpriteRenderer spriteRenderer; // Reference to the SpriteRenderer component
 
+    public AudioPlayer AP;
     private void Awake()
     {
         // Get the shoot action from the Input Action Asset
@@ -66,6 +67,7 @@ public class ShootScrapped : MonoBehaviour
 
     private void Shooting()
     {
+        AP.ShootSoundPlay();
         // Get the mouse position in world coordinates
         Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
 

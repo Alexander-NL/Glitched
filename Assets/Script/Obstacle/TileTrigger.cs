@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class TileTrigger : MonoBehaviour
 {
-    private bool isPlayerInRange = false;  // Flag to check if the player is in range
     private Stats playerStats;  // Reference to the RespawnScript
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            isPlayerInRange = true;
             Debug.Log("Player fell down");
 
             // Try to get the RespawnScript component from the player

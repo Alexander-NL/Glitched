@@ -10,6 +10,7 @@ public class EnemyAttack : MonoBehaviour
     public EnemyPatrol EP;
     public EnemyChase EC;
     public EnemyStats ES;
+    public AudioEnemy AE;
 
     private Transform player; // Reference to the player
     private float lastAttackTime = 0f; // Time of the last attack
@@ -84,6 +85,7 @@ public class EnemyAttack : MonoBehaviour
 
     public void ExecuteAttack()
     {
+        AE.AttackSound();
         playerStats = player.GetComponent<Stats>();
         if (playerStats != null)
         {
@@ -99,6 +101,7 @@ public class EnemyAttack : MonoBehaviour
     }
     public void Stun(float duration)
     {
+        AE.StunnedPlay();
         if (isStunned) return; // Prevent multiple stuns
         AttackingPlayer = false;
         StartCoroutine(StunRoutine(duration));
