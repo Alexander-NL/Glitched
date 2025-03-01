@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: da93b5eb2b34531429f64368a58b20ec
+guid: 7ebabf29c0508d5448957ee813c8d179
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: VirusBlockade1_0
+      name: StreetLights_0
       rect:
         serializedVersion: 2
-        x: 100
-        y: 38
-        width: 95
-        height: 213
+        x: 0
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcf33f61f6cf0cb4b98e56e1e2cf0550
-      internalID: 2097306901
+      spriteID: 27827a2c6f605d048a69826a0fb53f9e
+      internalID: -301706076
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VirusBlockade1_1
+      name: StreetLights_1
       rect:
         serializedVersion: 2
-        x: 106
-        y: 189
-        width: 5
-        height: 5
+        x: 16
+        y: 32
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,20 +132,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38ed6cbb63176cf47a5cbfb571bdfe16
-      internalID: 2017127845
+      spriteID: 339bc706660c4bd4ea43d1e0daf1b44c
+      internalID: 1103053146
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VirusBlockade1_2
+      name: StreetLights_2
       rect:
         serializedVersion: 2
-        x: 107
-        y: 172
-        width: 5
-        height: 7
+        x: 0
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c641db0de7a8bd4a82818cac0f688d8
-      internalID: -938511644
+      spriteID: a4fa481d55e744c4cb7fb31c5f9f9ca9
+      internalID: 988936670
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VirusBlockade1_3
+      name: StreetLights_3
       rect:
         serializedVersion: 2
-        x: 105
-        y: 166
-        width: 6
-        height: 5
+        x: 16
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,20 +174,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34e14d4645dd1714391f9db2148f5698
-      internalID: 629609077
+      spriteID: 064b9bdc9b3857347b3f592893c4c955
+      internalID: 1113885235
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: VirusBlockade1_4
+      name: StreetLights_4
       rect:
         serializedVersion: 2
-        x: 104
-        y: 160
-        width: 5
-        height: 5
+        x: 0
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,8 +195,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8625313867cfe174fb2c077ac7dd5b42
-      internalID: 353967929
+      spriteID: 3c540832175bd4a4c9fc0c596907ddad
+      internalID: -676972532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StreetLights_5
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b039e7111455b440b5265fd654fb2f6
+      internalID: -1617255057
       vertices: []
       indices: 
       edges: []
@@ -212,11 +233,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      VirusBlockade1_0: 2097306901
-      VirusBlockade1_1: 2017127845
-      VirusBlockade1_2: -938511644
-      VirusBlockade1_3: 629609077
-      VirusBlockade1_4: 353967929
+      StreetLights_0: -301706076
+      StreetLights_1: 1103053146
+      StreetLights_2: 988936670
+      StreetLights_3: 1113885235
+      StreetLights_4: -676972532
+      StreetLights_5: -1617255057
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
