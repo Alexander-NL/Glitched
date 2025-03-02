@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ae0025ffb8c4cfa48b86de1a61bd16d1
+guid: 95a0cc07e58b11d4491c8edc24dc5583
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,91 +95,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Idle_Animation_-Sheets_0
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 48
-        width: 23
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b1d5245d4b10136448b19cd9ab0d8731
-      internalID: -2080563115
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_Animation_-Sheets_1
-      rect:
-        serializedVersion: 2
-        x: 61
-        y: 48
-        width: 23
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dc609338ab47762488727639b1a8c300
-      internalID: 401715112
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_Animation_-Sheets_2
-      rect:
-        serializedVersion: 2
-        x: 13
-        y: 0
-        width: 23
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a2b4814a57a8e3b4994a5e04006cbea9
-      internalID: 1872771786
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Idle_Animation_-Sheets_3
-      rect:
-        serializedVersion: 2
-        x: 61
-        y: 0
-        width: 23
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c3c625f13b7b52a4498c053ca2219e0d
-      internalID: 1424102097
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -190,11 +106,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Idle_Animation_-Sheets_0: -2080563115
-      Idle_Animation_-Sheets_1: 401715112
-      Idle_Animation_-Sheets_2: 1872771786
-      Idle_Animation_-Sheets_3: 1424102097
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
