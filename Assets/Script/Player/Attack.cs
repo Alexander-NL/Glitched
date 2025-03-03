@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class Attack : MonoBehaviour
 {
@@ -26,8 +27,8 @@ public class Attack : MonoBehaviour
     private PlayerInput playerInput;
     private InputAction attackAction;
 
-    private Animator animator; // Reference to the Animator component
-    private SpriteRenderer spriteRenderer; // Reference to the SpriteRenderer component
+    public Animator animator; // Reference to the Animator component
+    public SpriteRenderer spriteRenderer; // Reference to the SpriteRenderer component
 
     private Vector2 attackDirection; // Store the attack direction when the attack is initiated
     public AudioPlayer AP;
@@ -39,12 +40,6 @@ public class Attack : MonoBehaviour
 
         // Get the attack action
         attackAction = playerInput.actions["Attack"]; // Ensure this action is bound to Mouse 1
-
-        // Get the Animator component
-        animator = GetComponent<Animator>();
-
-        // Get the SpriteRenderer component
-        spriteRenderer = GetComponent<SpriteRenderer>();
 
         // Ensure all hitboxes are initially disabled
         DisableAllHitboxes();
@@ -141,7 +136,6 @@ public class Attack : MonoBehaviour
 
     IEnumerator PerformBasicAttack()
     {
-        AP.BasicAttack1Play();
         basicAttackCount++;
         lastBasicAttackTime = Time.time;
 
@@ -157,6 +151,7 @@ public class Attack : MonoBehaviour
 
         if (hitbox != null)
         {
+            OnBasicAttackReached(basicAttackCount);
             hitbox.SetActive(true);
             yield return new WaitForSeconds(hitboxDuration); // Use the editable hitbox duration
             hitbox.SetActive(false);
@@ -173,7 +168,6 @@ public class Attack : MonoBehaviour
 
     public void PerformChargedAttack(int stage)
     {
-        AP.ChargedRampUpPlay();
         string animationTrigger = "C_Attack" + stage;
         animator.SetTrigger(animationTrigger);
 
@@ -183,6 +177,7 @@ public class Attack : MonoBehaviour
 
         if (hitbox != null)
         {
+            AP.ChargedAttackPlay();
             hitbox.SetActive(true);
             StartCoroutine(DeactivateHitboxAfterDelay(hitbox, hitboxDuration)); // Use the editable hitbox duration
         }
@@ -260,14 +255,37 @@ public class Attack : MonoBehaviour
                 hitbox.SetActive(false);
         }
     }
-
+    private void OnBasicAttackReached(int basicAttackCount)
+    {
+        switch (basicAttackCount)
+        {
+            case 1:
+                AP.BasicAttack1Play();
+                Debug.Log("Attack1 Sound Play");
+                break;
+            case 2:
+                AP.BasicAttack2Play();
+                Debug.Log("Attack2s Sound Play");
+                break;
+            case 3:
+                AP.BasicAttack3Play();
+                break;
+        }
+    }
     private void OnChargeStageReached(int stage)
     {
-        // Optional: Add visual/audio feedback for reaching a new stage
-        Debug.Log("Reached Stage " + stage);
-
-        // Example: Play a sound or update a UI charge bar
-        // AudioManager.Instance.Play("ChargeStage" + stage);
-        // UIManager.Instance.UpdateChargeBar(stage);
+        switch (stage)
+        {
+            case 1:
+                AP.ChargedRamp1Play();
+                Debug.Log("Test");
+                break;
+            case 2:
+                AP.ChargedRamp2Play();
+                break;
+            case 3:
+                AP.ChargedRamp3Play();
+                break;
+        }
     }
 }

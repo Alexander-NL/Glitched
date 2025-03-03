@@ -30,7 +30,7 @@ public class Movement : MonoBehaviour
     public AudioPlayer AP;
 
     // Reference to the Animator component
-    private Animator animator;
+    public Animator animator;
     public SpriteRenderer spriteRenderer;
 
     // Store the default local scale for flipping
@@ -43,8 +43,6 @@ public class Movement : MonoBehaviour
         spikelayer = LayerMask.NameToLayer("Spike");
         DeadBlocks = LayerMask.NameToLayer("DeadBlocks");
 
-        // Get the Animator component
-        animator = GetComponent<Animator>();
         if (animator == null)
         {
             Debug.LogError("Animator component not found on this GameObject.");

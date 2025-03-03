@@ -14,10 +14,10 @@ public class AudioPlayer : MonoBehaviour
         BasicAttack1, 
         BasicAttack2, 
         BasicAttack3,
-        ChargedRampUp,
-        ChargedAttack1,
-        ChargedAttack2,
-        ChargedAttack3;
+        ChargedAttack,
+        ChargedRamp1,
+        ChargedRamp2,
+        ChargedRamp3;
     
     public void DashSoundPlay()
     {
@@ -73,27 +73,27 @@ public class AudioPlayer : MonoBehaviour
         src.Play();
     }
 
-    public void ChargedRampUpPlay()
+    public void ChargedAttackPlay()
     {
-        src.clip = ChargedRampUp;
+        src.clip = ChargedAttack;
         src.Play();
     }
 
-    public void ChargedAttack1Play()
+    public void ChargedRamp1Play()
     {
-        src.clip = ChargedAttack1;
+        src.clip = ChargedRamp1;
         src.Play();
     }
 
-    public void ChargedAttack2Play()
+    public void ChargedRamp2Play()
     {
-        src.clip = ChargedAttack2;
+        src.clip = ChargedRamp2;
         src.Play();
     }
 
-    public void ChargedAttack3Play()
+    public void ChargedRamp3Play()
     {
-        src.clip = ChargedAttack3;
+        src.clip = ChargedRamp3;
         src.Play();
     }
 
