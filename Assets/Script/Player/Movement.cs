@@ -27,7 +27,10 @@ public class Movement : MonoBehaviour
     private int spikelayer;
     private int DeadBlocks;
 
+    public bool CannotAtk;
+
     public AudioPlayer AP;
+    public Attack A;
 
     // Reference to the Animator component
     public Animator animator;
@@ -110,6 +113,7 @@ public class Movement : MonoBehaviour
         int count = rb.Cast(direction, movementFilter, castCollisions, moveSpeed * Time.fixedDeltaTime + collisionOffset);
         if (count == 0)
         {
+            CannotAtk = true;
             rb.MovePosition(rb.position + direction * moveSpeed * Time.fixedDeltaTime);
             return true;
         }
@@ -126,6 +130,7 @@ public class Movement : MonoBehaviour
     {
         if (canDash && movementInput != Vector2.zero)
         {
+            CannotAtk = true;
             Debug.Log("DASHING");
             StartCoroutine(Dash());
         }
@@ -211,8 +216,9 @@ public class Movement : MonoBehaviour
         }
     }
 
-    //public void Reset()
-    //{
-    //    canDash = true;
-    //}
+    public void ResetPlayerData()
+    {
+        isDashing = false;
+        canDash = true;
+    }
 }

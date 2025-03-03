@@ -14,7 +14,8 @@ public class Attack : MonoBehaviour
 
     [Header("Hitbox Duration")]
     public float hitboxDuration = 0.2f; // Duration the hitbox stays active (editable in Inspector)
-
+    
+    public bool CannotAttacking = false;
     public float damage;
     private float chargeTimer = 0f;
     private bool isCharging = false;
@@ -26,6 +27,7 @@ public class Attack : MonoBehaviour
 
     private PlayerInput playerInput;
     private InputAction attackAction;
+    public Movement M;
 
     public Animator animator; // Reference to the Animator component
     public SpriteRenderer spriteRenderer; // Reference to the SpriteRenderer component
@@ -72,7 +74,8 @@ public class Attack : MonoBehaviour
 
     private void HandleAttack()
     {
-        // Check if the attack button is pressed and basic attacks are not on cooldown
+        if (CannotAttacking == true) return;
+
         if (attackAction.IsPressed() && !isBasicAttackOnCooldown)
         {
             if (!isCharging)
@@ -261,11 +264,9 @@ public class Attack : MonoBehaviour
         {
             case 1:
                 AP.BasicAttack1Play();
-                Debug.Log("Attack1 Sound Play");
                 break;
             case 2:
                 AP.BasicAttack2Play();
-                Debug.Log("Attack2s Sound Play");
                 break;
             case 3:
                 AP.BasicAttack3Play();
@@ -278,7 +279,6 @@ public class Attack : MonoBehaviour
         {
             case 1:
                 AP.ChargedRamp1Play();
-                Debug.Log("Test");
                 break;
             case 2:
                 AP.ChargedRamp2Play();

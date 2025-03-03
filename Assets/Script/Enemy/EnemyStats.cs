@@ -53,39 +53,39 @@ public class EnemyStats : MonoBehaviour
     public void DamageEnemyBA()
     {
         AE.DamagedSound();
-        CurrHP = CurrHP - S.M1_Damage;
+        CurrHP = CurrHP - S.M1_Damage/2;
     }
 
     public void DamageEnemyBA2()
     {
         AE.DamagedSound();
-        CurrHP = CurrHP - S.M1_Damage;
+        CurrHP = CurrHP - S.M1_Damage/2;
     }
 
     public void DamageEnemyBA3()
     {
         AE.DamagedSound();
-        CurrHP = CurrHP - S.M1_Damage * 2;
+        CurrHP = CurrHP - S.M1_Damage;
     }
 
     public void DamageEnemyH1()
     {
         AE.DamagedSound();
-        float H1 = 2 * S.M1_Damage;
+        float H1 =S.M1_Damage;
         CurrHP = CurrHP - H1;
     }
 
     public void DamageEnemyH2()
     {
         AE.DamagedSound();
-        float H2 = 2 * S.M1_Damage * 1.5f;
+        float H2 = S.M1_Damage * 1.5f;
         CurrHP = CurrHP - H2;
     }
 
     public void DamageEnemyH3()
     {
         AE.DamagedSound();
-        float H3 = 2 * S.M1_Damage * 2;
+        float H3 = S.M1_Damage * 2;
         CurrHP = CurrHP - H3;
     }
 

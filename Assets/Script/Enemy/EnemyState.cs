@@ -3,7 +3,7 @@ using UnityEngine;
 public class EnemyAnimationStateMachine : MonoBehaviour
 {
     // Reference to the Animator component
-    private Animator animator;
+    public Animator animator;
 
     // Reference to other enemy scripts
     public EnemyPatrol enemyPatrol;
@@ -24,11 +24,6 @@ public class EnemyAnimationStateMachine : MonoBehaviour
     }
 
     private EnemyState currentState;
-
-    void Start()
-    {
-        animator = GetComponent<Animator>();
-    }
 
     void Update()
     {

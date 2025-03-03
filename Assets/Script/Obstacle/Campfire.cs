@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Campfire : MonoBehaviour
@@ -9,9 +10,17 @@ public class Campfire : MonoBehaviour
 
     public AudioSource src;
     public AudioClip Interact;
+    public bool FirstSpawn;
 
     private bool isPlayerInRange = false;  // Flag to check if the player is in range
 
+    private void Start()
+    {
+        if(FirstSpawn == true)
+        {
+            SetCheckPoint();
+        }
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -34,6 +43,7 @@ public class Campfire : MonoBehaviour
     {
         if (isPlayerInRange && Input.GetKeyDown(KeyCode.E))
         {
+            InteractPlay();
             HealPlayer();
             SetCheckPoint();
         }
@@ -46,7 +56,6 @@ public class Campfire : MonoBehaviour
         S.M2_Ammo = S.M2_AmmoMax;
         Debug.Log("Player has been healed.");
     }
-
     public void SetCheckPoint()
     {
         if (R != null)

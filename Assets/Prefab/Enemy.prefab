@@ -129,8 +129,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EP: {fileID: 2645345219498637266}
   ES: {fileID: 3029429083816428487}
-  player: {fileID: 0}
-  Animator: {fileID: 0}
+  player: {fileID: 5815008615549500478}
+  Animator: {fileID: 526767230043103551}
   isMoving: 1
   NotAlive: 0
 --- !u!114 &3029429083816428487
@@ -158,7 +158,7 @@ MonoBehaviour:
   chaseRange: 5
   chaseSpeed: 3
   EC: {fileID: 6706922290133777568}
-  AE: {fileID: 0}
+  AE: {fileID: 1063020910743659833}
   Dead: 0
   NotWell: 0
 --- !u!114 &4539386134893100896
@@ -205,6 +205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33896d1328a30a14cab80b5898c17df7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 526767230043103551}
   enemyPatrol: {fileID: 2645345219498637266}
   enemyChase: {fileID: 6706922290133777568}
   enemyAttack: {fileID: 4539386134893100896}

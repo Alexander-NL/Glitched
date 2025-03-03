@@ -2670,8 +2670,9 @@ MonoBehaviour:
   dashDuration: 0.2
   dashCooldown: 1
   canDash: 1
-  AP: {fileID: 0}
-  animator: {fileID: 0}
+  CannotAtk: 0
+  AP: {fileID: 356644411983722241}
+  animator: {fileID: 7704659512367665724}
   spriteRenderer: {fileID: 6658479987419296400}
 --- !u!114 &1525038187218884722
 MonoBehaviour:
@@ -2710,8 +2711,8 @@ MonoBehaviour:
   P_EnemyStunDuration: 1.5
   P_Module: 0
   R: {fileID: 1478449807627887525}
-  M: {fileID: 0}
-  AP: {fileID: 0}
+  M: {fileID: 1577130666636469458}
+  AP: {fileID: 356644411983722241}
 --- !u!114 &4019432138348596581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2724,7 +2725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 986da251b572d3a40976ecffcd17986f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AP: {fileID: 0}
+  AP: {fileID: 356644411983722241}
   S: {fileID: 1525038187218884722}
 --- !u!114 &2364597423760582004
 MonoBehaviour:
@@ -2743,7 +2744,7 @@ MonoBehaviour:
   bulletSpeed: 10
   firePoint: {fileID: 148491858095917419}
   shootCooldown: 0.5
-  AP: {fileID: 0}
+  AP: {fileID: 356644411983722241}
 --- !u!114 &2369872461942996654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2785,9 +2786,10 @@ MonoBehaviour:
   - {fileID: 4531616416381955414}
   hitboxDuration: 0.5
   damage: 0
-  animator: {fileID: 0}
-  spriteRenderer: {fileID: 0}
-  AP: {fileID: 0}
+  M: {fileID: 1577130666636469458}
+  animator: {fileID: 7704659512367665724}
+  spriteRenderer: {fileID: 6658479987419296400}
+  AP: {fileID: 356644411983722241}
 --- !u!114 &1478449807627887525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2941,10 +2943,10 @@ MonoBehaviour:
   BasicAttack1: {fileID: 8300000, guid: d4a3be7a465498a43b948041e539c162, type: 3}
   BasicAttack2: {fileID: 8300000, guid: 669c0763b9ab9ea4ca608a23fb065f29, type: 3}
   BasicAttack3: {fileID: 8300000, guid: 3576f599a332ef24a9f76941ad577fe8, type: 3}
-  ChargedRampUp: {fileID: 8300000, guid: 861f1d8322351074bb2cfc3656d719a3, type: 3}
-  ChargedAttack1: {fileID: 8300000, guid: 135a852f4b566ca4699bed3f82309116, type: 3}
-  ChargedAttack2: {fileID: 8300000, guid: 737dc95199accb94c825e6b8c09974ac, type: 3}
-  ChargedAttack3: {fileID: 8300000, guid: 90b4f10c0f8f4c445b047b1d0abebeb1, type: 3}
+  ChargedAttack: {fileID: 0}
+  ChargedRamp1: {fileID: 0}
+  ChargedRamp2: {fileID: 0}
+  ChargedRamp3: {fileID: 0}
 --- !u!1 &6205696722439642587
 GameObject:
   m_ObjectHideFlags: 0
