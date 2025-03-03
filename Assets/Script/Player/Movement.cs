@@ -103,6 +103,7 @@ public class Movement : MonoBehaviour
             {
                 currentState = PlayerState.Idle;
                 UpdateAnimation();
+                AP.StopAudio();
             }
         }
     }

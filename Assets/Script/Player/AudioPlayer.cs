@@ -96,4 +96,9 @@ public class AudioPlayer : MonoBehaviour
         src.clip = ChargedAttack3;
         src.Play();
     }
+
+    public void StopAudio()
+    {
+        src.Stop();
+    }
 }
