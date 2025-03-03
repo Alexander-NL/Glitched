@@ -145,8 +145,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 261dafd037b822643817bdd6eb236772, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrHP: 45
-  MaxHP: 45
+  CurrHP: 60
+  MaxHP: 60
   Damage: 20
   Range: 1.2
   attackCooldown: 1
@@ -158,6 +158,7 @@ MonoBehaviour:
   chaseRange: 5
   chaseSpeed: 3
   EC: {fileID: 6706922290133777568}
+  AE: {fileID: 0}
   Dead: 0
   NotWell: 0
 --- !u!114 &4539386134893100896
@@ -175,6 +176,7 @@ MonoBehaviour:
   EP: {fileID: 2645345219498637266}
   EC: {fileID: 6706922290133777568}
   ES: {fileID: 3029429083816428487}
+  AE: {fileID: 0}
   isStunned: 0
   animator: {fileID: 526767230043103551}
   AttackingPlayer: 0
@@ -430,3 +432,4 @@ MonoBehaviour:
   Damaged: {fileID: 0}
   Attack: {fileID: 0}
   Dead: {fileID: 0}
+  Stunned: {fileID: 0}
