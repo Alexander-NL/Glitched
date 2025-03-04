@@ -13,7 +13,6 @@ public class EnemyChase : MonoBehaviour
     private Vector2 Difference;
     public Animator Animator;
 
-    private bool isChasing = false; // Flag to check if the enemy is chasing the player
     public bool isMoving = true;
 
     public bool NotAlive;
@@ -42,7 +41,6 @@ public class EnemyChase : MonoBehaviour
         if (ES.CurrHP < 0)
         {
             NotAlive = true;
-            isChasing = false;
             StopMovement();
         }
     }

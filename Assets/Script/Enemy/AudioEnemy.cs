@@ -30,4 +30,9 @@ public class AudioEnemy : MonoBehaviour
         src.clip = Stunned;
         src.Play();
     }
+
+    public void StopSound()
+    {
+        src.Stop();
+    }
 }

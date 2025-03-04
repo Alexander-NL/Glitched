@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1c4472b81f8107b4e91f1bb78f31a2b2
+guid: 7000a06c15b018a49a373b30f7f3a198
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Damaged_0
+      name: EyeUI_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 80
-        width: 32
-        height: 34
+        x: 29
+        y: 216
+        width: 46
+        height: 41
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,113 +111,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04e3d78b306982846bc4ba015326430c
-      internalID: -1082762840
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Damaged_1
-      rect:
-        serializedVersion: 2
-        x: 81
-        y: 78
-        width: 31
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bbf8147a27af0f54cb21ea3794f4efde
-      internalID: 955164120
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Damaged_2
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 79
-        width: 29
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0883eeef3bf57a2489783ef3080d6d81
-      internalID: 1488350275
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Damaged_3
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 16
-        width: 31
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 04975be29e407aa49afea4e87057fdda
-      internalID: -1722484341
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Damaged_4
-      rect:
-        serializedVersion: 2
-        x: 82
-        y: 16
-        width: 27
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fb9f8c412b3f3a94188e90ac5d34c975
-      internalID: -1643977527
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Damaged_5
-      rect:
-        serializedVersion: 2
-        x: 147
-        y: 15
-        width: 25
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f3673b644d21f1f4c94c044f4ac99710
-      internalID: 1265894623
+      spriteID: 5bb4fe77a991847419c7b39c05eaa992
+      internalID: -661943690
       vertices: []
       indices: 
       edges: []
@@ -233,12 +128,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Damaged_0: -1082762840
-      Damaged_1: 955164120
-      Damaged_2: 1488350275
-      Damaged_3: -1722484341
-      Damaged_4: -1643977527
-      Damaged_5: 1265894623
+      EyeUI_0: -661943690
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

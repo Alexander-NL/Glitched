@@ -60,6 +60,7 @@ public class EnemyAttack : MonoBehaviour
             if (isWindingUp)
             {
                 CancelWindUp();
+                AE.StopSound();
             }
 
             EC.ResumeMovement();
@@ -68,6 +69,7 @@ public class EnemyAttack : MonoBehaviour
 
     void StartWindUp()
     {
+        AE.AttackSound();
         AttackingPlayer = true;
         isWindingUp = true; // Start the wind-up phase
         windUpStartTime = Time.time; // Record the start time of the wind-up phase
@@ -85,7 +87,6 @@ public class EnemyAttack : MonoBehaviour
 
     public void ExecuteAttack()
     {
-        AE.AttackSound();
         playerStats = player.GetComponent<Stats>();
         if (playerStats != null)
         {

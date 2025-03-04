@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1c4472b81f8107b4e91f1bb78f31a2b2
+guid: 80942dd46cd66eb438efd6386cc8aadd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,127 +97,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Damaged_0
+      name: Gates_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 80
-        width: 32
-        height: 34
+        x: 6
+        y: 100
+        width: 20
+        height: 20
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04e3d78b306982846bc4ba015326430c
-      internalID: -1082762840
+      spriteID: c1004c11a88a4984bb95ba39b2ad5c6f
+      internalID: -1461382982
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Damaged_1
+      name: Gates_1
       rect:
         serializedVersion: 2
-        x: 81
-        y: 78
-        width: 31
-        height: 34
+        x: 38
+        y: 100
+        width: 20
+        height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bbf8147a27af0f54cb21ea3794f4efde
-      internalID: 955164120
+      spriteID: 7c7bb38e651ede543b547171291f47a8
+      internalID: -71915520
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Damaged_2
+      name: Gates_2
       rect:
         serializedVersion: 2
-        x: 144
-        y: 79
-        width: 29
-        height: 34
+        x: 0
+        y: 48
+        width: 64
+        height: 39
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0883eeef3bf57a2489783ef3080d6d81
-      internalID: 1488350275
+      spriteID: a3793d3efbb0af246b48df248671d2ac
+      internalID: -1333073733
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Damaged_3
+      name: Gates_3
       rect:
         serializedVersion: 2
-        x: 16
-        y: 16
-        width: 31
-        height: 34
+        x: 80
+        y: 32
+        width: 16
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04975be29e407aa49afea4e87057fdda
-      internalID: -1722484341
+      spriteID: 411073394cdc9004ba7df31784c63788
+      internalID: -1995235673
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Damaged_4
+      name: Gates_4
       rect:
         serializedVersion: 2
-        x: 82
-        y: 16
-        width: 27
-        height: 34
+        x: 112
+        y: 32
+        width: 16
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb9f8c412b3f3a94188e90ac5d34c975
-      internalID: -1643977527
+      spriteID: 2c89f80665bb5b84a8136926c7ca2d0c
+      internalID: 1628392930
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Damaged_5
+      name: Gates_6
       rect:
         serializedVersion: 2
-        x: 147
-        y: 15
-        width: 25
-        height: 34
+        x: 0
+        y: 0
+        width: 64
+        height: 39
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3673b644d21f1f4c94c044f4ac99710
-      internalID: 1265894623
+      spriteID: 2873d7fd9d0283f44b5cab5a7f9617a4
+      internalID: -138633408
       vertices: []
       indices: 
       edges: []
@@ -233,12 +233,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Damaged_0: -1082762840
-      Damaged_1: 955164120
-      Damaged_2: 1488350275
-      Damaged_3: -1722484341
-      Damaged_4: -1643977527
-      Damaged_5: 1265894623
+      Gates_0: -1461382982
+      Gates_1: -71915520
+      Gates_2: -1333073733
+      Gates_3: -1995235673
+      Gates_4: 1628392930
+      Gates_5: 4225522
+      Gates_6: -138633408
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -35,8 +35,8 @@ public class Stats : MonoBehaviour
 
     [Header("Shoot Settings")]
     public float M2_Damage = 5f;
-    public int M2_Ammo = 3;
-    public int M2_AmmoMax = 3;
+    public float M2_Ammo = 3;
+    public float M2_AmmoMax = 3;
     public int M2_Module = 0; // Shoot Level
 
     [Header("Parry Settings")]
@@ -46,6 +46,8 @@ public class Stats : MonoBehaviour
     public RespawnScript R; // Reference to the RespawnScript
     public Movement M;
     public AudioPlayer AP;
+
+    public Animator AN;
     void Start()
     {
 
@@ -61,6 +63,7 @@ public class Stats : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        AN.SetTrigger("Damaged");
         AP.PlayerDamagedSoundPlay();
         CurrHP -= damage;
         if (CurrHP <= 0)
@@ -97,5 +100,17 @@ public class Stats : MonoBehaviour
         M2_Ammo = M2_AmmoMax;
         //M.Reset();
         Debug.Log("Player has been healed.");
+    }
+
+    public void AmmoIncrease()
+    {
+        if(M2_Ammo > M2_AmmoMax)
+        {
+            M2_Ammo = M2_AmmoMax;
+        }
+        else
+        {
+            M2_Ammo = M2_Ammo + 0.5f;
+        }
     }
 }
